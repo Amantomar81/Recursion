@@ -1,3 +1,4 @@
+import java.util.Scanner;
 /*
 Write a program to find out and return the number of digits present in a number recursively.
 Sample Input 1 :
@@ -17,8 +18,9 @@ public class Recursive {
        return 1+ num(n/10);
     }
     public static void main(String[] args) {
-        int n =156;
-        int x = num(156);
+        Scanner sc = new Scanner(System.in);
+        int n= sc.nextInt();
+        int x = num(n);
         System.out.println(x);
     }
 }
